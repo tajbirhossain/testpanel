@@ -25,6 +25,7 @@ main {
                     height: 100px;
                     transition: .3s;
                     overflow: hidden;
+                    opacity: 1;
                     &.active {
                         height: 0px;
                     }

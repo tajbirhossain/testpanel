@@ -13,8 +13,19 @@ nestedItem.addEventListener("click", () => {
 
 
 
+let isOpen = true
 writeInpToggle.addEventListener("click", () => {
-    writeInpLeft.classList.toggle("active")
+    if (isOpen) {
+        writeInpLeft.style.opacity = "0"
+        setTimeout(() => {
+            writeInpLeft.classList.add("active")
+        }, 300);
+        isOpen = false
+    } else {
+        writeInpLeft.style.opacity = "1"
+        writeInpLeft.classList.remove("active")
+        isOpen = true
+    }
 })
 
 

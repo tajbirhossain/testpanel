@@ -197,6 +197,7 @@ main .container .mainLeft .writeInpWrap .writeInpLeft {
   height: 100px;
   transition: 0.3s;
   overflow: hidden;
+  opacity: 1;
 }
 main .container .mainLeft .writeInpWrap .writeInpLeft.active {
   height: 0px;
